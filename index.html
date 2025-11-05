@@ -3,66 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RH Casa Goianita | Guia de Entrevista</title>
-    
+    <title>RH Plur | Guia de Entrevista</title>
+   
     <!-- 1. Fontes (Padrão V3) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   
     <!-- Font Awesome para ícones (para os checklists) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <!-- Script de detecção de JS para animação segura -->
     <script>document.documentElement.className = 'js';</script>
-
     <style>
         /* --- 1. Núcleo da Identidade Visual (Tokens) --- */
         :root {
             /* Paleta Principal */
-            --primary-bg: #06192a;       /* Azul Petróleo - Fundo principal */
-            --card-bg: #0A243D;          /* Azul Escuro - Fundo de cards */
-            --accent-color: #00e800;     /* Verde Vibrante - Destaques */
-            --danger-color: #ff4d4d;     /* Vermelho para alertas */
-            
+            --primary-bg: #06192a; /* Azul Petróleo - Fundo principal */
+            --card-bg: #0A243D; /* Azul Escuro - Fundo de cards */
+            --accent-color: #00e800; /* Verde Vibrante - Destaques */
+            --danger-color: #ff4d4d; /* Vermelho para alertas */
+           
             /* Textos */
-            --text-primary: #ffffff;     /* Branco - Textos principais */
-            --text-muted: #cccccc;       /* Cinza Claro */
-            --text-subtle: #a0a0a0;       /* Cinza - Textos secundários */
-            
+            --text-primary: #ffffff; /* Branco - Textos principais */
+            --text-muted: #cccccc; /* Cinza Claro */
+            --text-subtle: #a0a0a0; /* Cinza - Textos secundários */
+           
             /* Bordas e Efeitos */
             --border-color: rgba(255, 255, 255, 0.1);
             --accent-glow: 0 0 8px rgba(0, 232, 0, 0.7);
-            
+           
             /* Tipografia (Famílias) */
             --font-primary: 'Poppins', sans-serif;
             --font-secondary: 'Merriweather', serif; /* Não usado nesta página */
-
             /* Tipografia (Tamanhos) */
             --font-size-base: 1.1rem;
             --font-size-h3: 1.5rem;
             --font-size-h2: clamp(2rem, 4vw, 2.5rem);
             --font-size-h1: clamp(2.5rem, 5vw, 3rem);
-
             /* Espaçamento */
-            --space-sm: 1rem;  /* 16px */
-            --space-md: 2rem;  /* 32px */
-            --space-lg: 4rem;  /* 64px */
-            --space-xl: 6rem;  /* 96px */
+            --space-sm: 1rem; /* 16px */
+            --space-md: 2rem; /* 32px */
+            --space-lg: 4rem; /* 64px */
+            --space-xl: 6rem; /* 96px */
         }
-
         /* --- 2. Estrutura e Layout (Padrão V3) --- */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         html, body {
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-
         body {
             font-family: var(--font-primary);
             color: var(--text-primary);
@@ -72,7 +65,6 @@
             background-attachment: fixed;
             line-height: 1.6;
         }
-
         /* --- 3. Ativos da Marca (Logos) --- */
         header {
             position: fixed;
@@ -89,50 +81,42 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .header-logo {
             height: 48px; /* 12px * 4 */
         }
-        
+       
         .header-title {
             font-size: 1rem;
             font-weight: 600;
             color: var(--text-muted);
         }
-
         main {
             padding-top: calc(48px + (var(--space-sm) * 2)); /* Altura do header */
             padding-bottom: var(--space-lg);
         }
-
         footer {
             padding: var(--space-lg) var(--space-md);
             text-align: center;
             background-color: #000; /* Rodapé sempre preto */
             border-top: 1px solid var(--border-color);
         }
-
         .footer-logo {
             height: 96px; /* 32px * 3 */
             margin-bottom: var(--space-sm);
         }
-
         footer p {
             color: var(--text-subtle);
             font-size: 0.9rem;
         }
-
         /* --- 4. Componentes (Card Padrão V3) --- */
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 0 var(--space-md);
         }
-
         section {
             padding-top: var(--space-lg);
         }
-
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -140,41 +124,34 @@
             padding: var(--space-md);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .card:hover {
             transform: translateY(-10px); /* Padrão V3 */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-
         .card:focus-visible {
             /* Acessibilidade Obrigatória V3 */
             outline: 3px solid var(--accent-color);
             outline-offset: 4px;
         }
-
         /* --- 5. Animações (Padrão V3) --- */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(20px); } 
             to { opacity: 1; transform: translateY(0); }
         }
-
         /* Classe inicial (aplicada apenas se JS estiver ativo) */
         .js .fade-in {
             opacity: 0;
         }
-
         /* Classe adicionada pelo JS */
         .fade-in.is-visible {
             animation: fadeIn 0.8s ease-out forwards;
         }
-        
+       
         /* --- 6. Estilos de Conteúdo Específico (Esta Página) --- */
-
         .hero-section {
             text-align: center;
             padding-bottom: 0;
         }
-
         h1 {
             font-size: var(--font-size-h1);
             color: var(--accent-color);
@@ -183,21 +160,19 @@
             font-weight: 700;
             margin-bottom: var(--space-sm);
         }
-
         h2 {
             font-size: var(--font-size-h2);
             color: var(--text-primary);
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
-        
+       
         .hero-section p {
             font-size: var(--font-size-base);
             color: var(--text-muted);
             max-width: 700px;
             margin: 0 auto;
         }
-
         h3 {
             font-size: var(--font-size-h3);
             color: var(--accent-color);
@@ -206,7 +181,7 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--border-color);
         }
-        
+       
         h4 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -214,7 +189,7 @@
             margin-bottom: 0.5rem;
             margin-top: var(--space-sm);
         }
-        
+       
         h5 {
             font-size: 1.1rem;
             font-weight: 600;
@@ -222,11 +197,9 @@
             margin-top: var(--space-md);
             margin-bottom: var(--space-sm);
         }
-
         ul {
             list-style-type: none;
         }
-
         li {
             position: relative;
             padding-left: 35px; /* Espaço para o ícone */
@@ -235,10 +208,9 @@
             font-size: 1rem;
             transition: background-color 0.2s ease;
         }
-
         /* Ícone de checklist */
         li::before {
-            content: '\f00c'; /* Font Awesome check */
+            content: '00c'; /* Font Awesome check */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             color: var(--accent-color);
@@ -247,17 +219,16 @@
             top: 4px;
             font-size: 1.1rem;
         }
-        
+       
         li strong {
             color: var(--text-muted);
             font-weight: 600;
         }
-        
+       
         p {
             color: var(--text-muted);
             margin-bottom: 1rem;
         }
-
         /* Estilo para blocos de "Avalie" */
         .evaluation-point {
             background-color: rgba(6, 25, 42, 0.5); /* --primary-bg com opacidade */
@@ -268,32 +239,28 @@
             margin-left: -35px; /* Alinhar com o `li` pai */
             border-radius: 8px;
         }
-
         .evaluation-point::before {
-            content: '\f06e'; /* Font Awesome eye */
+            content: '06e'; /* Font Awesome eye */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             color: var(--accent-color);
             margin-right: 10px;
         }
-
         /* Correção para LIs dentro de .evaluation-point */
         .evaluation-point ul {
             margin-top: var(--space-sm);
         }
-        
+       
         .evaluation-point li {
             font-size: 0.95rem;
             margin-bottom: 0.5rem;
         }
-
         /* Mudar ícone de LIs aninhados */
         .evaluation-point li::before {
-             content: '\f105'; /* Seta 'chevron-right' */
+             content: '105'; /* Seta 'chevron-right' */
              font-size: 1rem;
              top: 6px;
         }
-
         /* --- 7. Estilos de Abas (Tabs) (Novo) --- */
         .tab-container {
             width: 100%;
@@ -302,7 +269,7 @@
             border-radius: 12px;
             overflow: hidden; /* Para conter as bordas arredondadas */
         }
-        
+       
         .tab-buttons {
             display: flex;
             flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
@@ -312,7 +279,6 @@
             top: 0;
             z-index: 10;
         }
-
         .tab-button {
             padding: 1rem 1.25rem;
             cursor: pointer;
@@ -326,29 +292,34 @@
             border-bottom: 3px solid transparent;
             margin-bottom: -2px; /* Alinha com a borda inferior do container */
         }
-        
+       
         .tab-button i {
             margin-right: 8px;
         }
-
+       
+        /* Ajuste responsivo para os botões das abas */
+        @media (max-width: 768px) {
+            .tab-button {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
         .tab-button:hover {
             background-color: rgba(255, 255, 255, 0.05);
             color: var(--text-primary);
         }
-        
+       
         .tab-button:focus-visible {
              /* Acessibilidade Obrigatória V3 */
             outline: 3px solid var(--accent-color);
             outline-offset: -3px;
             z-index: 10;
         }
-
         .tab-button.active {
             color: var(--accent-color);
             border-bottom: 3px solid var(--accent-color);
             text-shadow: var(--accent-glow);
         }
-
         .tab-content {
             padding: var(--space-md);
             display: none; /* Escondido por padrão */
@@ -356,22 +327,22 @@
             max-height: 80vh; /* Altura máxima para o conteúdo da aba */
             overflow-y: auto; /* Adiciona scroll se o conteúdo for muito grande */
         }
-        
+       
         .tab-content.active {
             display: block; /* Visível quando ativo */
         }
-        
+       
         /* --- 8. Estilos de Conteúdo das Abas (Novo) --- */
         .tab-content-full {
              /* Estilos para o conteúdo colado do manual */
         }
-        
+       
         .tab-content-full p {
             color: var(--text-muted);
             margin-bottom: 1rem;
             font-size: 1rem;
         }
-        
+       
         .tab-content-full h4 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -379,7 +350,7 @@
             margin-top: var(--space-md);
             margin-bottom: var(--space-sm);
         }
-        
+       
         .tab-content-full h5 {
             font-size: 1.1rem;
             font-weight: 600;
@@ -387,32 +358,31 @@
             margin-top: var(--space-md);
             margin-bottom: var(--space-sm);
         }
-        
+       
         .tab-content-full strong {
             color: var(--text-primary);
             font-weight: 600;
         }
-        
+       
         .tab-content-full em {
             color: var(--accent-color);
             font-style: italic;
         }
-        
+       
         .tab-content-full ul {
             list-style: none;
             padding-left: 0;
             margin-top: var(--space-sm);
         }
-        
+       
         .tab-content-full ul li {
             color: var(--text-muted);
             font-size: 1rem;
             margin-bottom: 0.75rem;
             padding-left: 35px;
         }
-
         .tab-content-full ul li::before {
-            content: '\f105'; /* Seta 'chevron-right' */
+            content: '105'; /* Seta 'chevron-right' */
             color: var(--accent-color);
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
@@ -421,7 +391,7 @@
             top: 4px;
             font-size: 1.1rem;
         }
-        
+       
         /* Estilo para checklists [ ] */
         .tab-content-full ul li i.fa-square,
         .tab-content-full ul li i.fa-check-square,
@@ -433,32 +403,31 @@
             left: 0;
             top: 4px;
         }
-        
+       
         .tab-content-full ul li::before {
              /* Sobrescreve o ícone padrão para listas que não são checklists */
-            content: '\f105';
+            content: '105';
         }
-        
+       
         .tab-content-full ul.checklist li::before {
              /* Remove o ícone duplicado se a classe checklist for usada */
-            content: ''; 
+            content: '';
         }
-
-        
+       
         .tab-content-full ol {
             list-style: none; /* Removemos o padrão */
             padding-left: 0;
             margin-top: var(--space-sm);
             counter-reset: item; /* Inicia o contador */
         }
-        
+       
         .tab-content-full ol li {
             color: var(--text-muted);
             font-size: 1rem;
             margin-bottom: 0.75rem;
             padding-left: 35px;
         }
-        
+       
         .tab-content-full ol li::before {
             content: counter(item) "."; /* Adiciona o número */
             counter-increment: item; /* Incrementa o contador */
@@ -469,68 +438,106 @@
             top: 0px;
             font-size: 1.1rem;
         }
-
         .tab-content-full hr {
             border: 0;
             height: 1px;
             background-color: var(--border-color);
             margin: var(--space-md) 0;
         }
-        
+       
         .tab-content-full .red-flag {
             color: var(--danger-color);
             font-weight: 600;
         }
-        
+       
         .tab-content-full .green-flag {
             color: var(--accent-color);
             font-weight: 600;
         }
-        
-
+       
+        /* Tabela (ADICIONADO) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            table-layout: fixed; /* Ajuda na responsividade */
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            color: var(--text-subtle);
+            word-wrap: break-word; /* Quebra palavras longas */
+        }
+        th {
+            background-color: rgba(0, 232, 0, 0.1); /* Fundo verde transparente */
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.1); /* Zebrado sutil */
+        }
+       
         /* Estilos para o fluxo */
         .fluxo-card li strong {
             color: var(--accent-color);
             font-weight: 700;
         }
-        
+       
         .fluxo-card li::before {
-            content: '\f271'; /* 'calendar-check' */
+            content: '271'; /* 'calendar-check' */
         }
-        
+       
         .fluxo-card ul ul li::before {
-             content: '\f105'; /* Seta 'chevron-right' */
+             content: '105'; /* Seta 'chevron-right' */
         }
-        
+       
         .fluxo-card .check-item::before {
-             content: '\f00c'; /* check */
+             content: '00c'; /* check */
              font-size: 1rem;
              top: 6px;
         }
-
+       
+        /* Botão de Impressão (Google Doc) (ADICIONADO) */
+        .gdoc-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-bg); /* Texto escuro para contraste */
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-bottom: var(--space-md);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gdoc-button:hover {
+            background-color: #00c600; /* Verde um pouco mais claro no hover */
+            transform: translateY(-2px);
+            box-shadow: var(--accent-glow);
+        }
+        .gdoc-button i {
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body>
-
     <!-- Cabeçalho (Padrão V3 - Proposta) -->
     <header>
-        <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-36.png" 
-             alt="Logo Live Consultoria" 
-             class="header-logo" 
+        <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-36.png"
+             alt="Logo Live Consultoria"
+             class="header-logo"
              loading="lazy">
-        <span class="header-title">Projeto Casa Goianita</span>
+        <span class="header-title">Projeto Plur</span>
     </header>
-
     <main>
         <div class="container">
-
             <!-- Seção Hero -->
             <section class="hero-section fade-in">
-                <h1>RH Casa Goianita</h1>
+                <h1>RH Plur</h1>
                 <h2>Processo de Entrevista de Vendedores</h2>
                 <p>Um guia passo-a-passo para padronizar e otimizar nossas contratações, garantindo que cada candidato seja avaliado de forma justa e eficaz com base no Manual de Seleção.</p>
             </section>
-
             <!-- Seção Fase 1 -->
             <section id="fase1" class="fade-in">
                 <h3>Fase 1: Preparação (Antes da Entrevista)</h3>
@@ -551,7 +558,6 @@
                     </ul>
                 </div>
             </section>
-
             <!-- Seção Fase 2 -->
             <section id="fase2" class="fade-in">
                 <h3>Fase 2: Condução da Entrevista (45-60 min)</h3>
@@ -563,7 +569,7 @@
                         <li>
                             <strong>Motivação (10 min):</strong> Use as perguntas do Bloco 5.1 do manual.
                             <div class="evaluation-point">
-                                <strong>Avalie:</strong> Foque na pergunta "Por que você se interessou por esta vaga em *nossa loja*?". Verifique se o candidato pesquisou a Casa Goianita ou se está apenas buscando qualquer emprego.
+                                <strong>Avalie:</strong> Foque na pergunta "Por que você se interessou por esta vaga em *nossa loja*?". Verifique se o candidato pesquisou a Plur ou se está apenas buscando qualquer emprego.
                             </div>
                         </li>
                         <li>
@@ -587,7 +593,6 @@
                     </ul>
                 </div>
             </section>
-
             <!-- Seção Fase 3 -->
             <section id="fase3" class="fade-in">
                 <h3>Fase 3: Avaliação (Imediata)</h3>
@@ -605,7 +610,7 @@
                     </ul>
                 </div>
             </section>
-            
+           
             <!-- Seção Fase 4 -->
             <section id="fase4" class="fade-in">
                 <h3>Fase 4: Etapa Prática (Para Aprovados)</h3>
@@ -629,12 +634,11 @@
                     </ul>
                 </div>
             </section>
-
             <!-- Seção Ferramentas (CONTEÚDO COMPLETO INSERIDO) -->
             <section id="ferramentas" class="fade-in">
                 <h3>Documentos Operacionais (Kit de Ferramentas)</h3>
                 <p style="color: var(--text-muted); margin-bottom: var(--space-sm);">✅ <strong>DOCUMENTOS OPERACIONAIS COMPLETOS.</strong><br>Abaixo estão os documentos na íntegra, extraídos diretamente do Manual de Seleção.</p>
-                
+               
                 <div class="tab-container">
                     <div class="tab-buttons">
                         <button class="tab-button active" onclick="openTab(event, 'tab-ficha')"><i class="fa-solid fa-tasks"></i> Ficha de Avaliação (Seção 8)</button>
@@ -642,15 +646,25 @@
                         <button class="tab-button" onclick="openTab(event, 'tab-perguntas')"><i class="fa-solid fa-clipboard-question"></i> Banco de Perguntas (Seção 5)</button>
                         <button class="tab-button" onclick="openTab(event, 'tab-roleplay')"><i class="fa-solid fa-user-group"></i> Roteiro de Role Play (Seção 7)</button>
                         <button class="tab-button" onclick="openTab(event, 'tab-integracao')"><i class="fa-solid fa-sitemap"></i> Guia de Integração</button>
+                        <!-- NOVA ABA ADICIONADA -->
+                        <button class="tab-button" onclick="openTab(event, 'tab-comportamental')"><i class="fa-solid fa-brain"></i> Análise Comportamental</button>
                     </div>
-
                     <!-- Conteúdo Aba 1: Ficha de Avaliação (Seção 8) -->
                     <div id="tab-ficha" class="tab-content active tab-content-full">
+                        <!-- LINK DO GDOC ADICIONADO -->
+                        <a href="https://docs.google.com/document/d/1ZYAfJutV3TDhaZtZEVG-JNyDrLyC9VZMaoZK8dQh4rk/edit?usp=sharing"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="gdoc-button">
+                            <i class="fa-solid fa-print"></i> Abrir Versão para Impressão (GDoc)
+                        </a>
+                        <hr>
+                       
                         <p>A avaliação deve ser baseada em critérios objetivos e padronizados para garantir justiça e comparabilidade. Recomenda-se o uso de uma Ficha de Avaliação por Candidato.</p>
-                        
+                       
                         <h4>8.1 Estrutura da Ficha de Avaliação</h4>
                         <p>A ficha deve ser preenchida pelo entrevistador *imediatamente* após a saída do candidato, enquanto as impressões estão frescas.</p>
-                        
+                       
                         <h5>Parte 1: Dados do Candidato</h5>
                         <ul>
                             <li>Nome Completo:</li>
@@ -659,7 +673,6 @@
                             <li>Entrevistador(a):</li>
                             <li>Fonte da Vaga (ex: Indicação, Vagas.com, LinkedIn):</li>
                         </ul>
-
                         <h5>Parte 2: Avaliação de Competências (Peso 60%)</h5>
                         <p>Use uma escala de 1 a 5, onde:</p>
                         <ul>
@@ -669,7 +682,7 @@
                             <li><strong>4:</strong> Acima do esperado (Demonstrou com clareza e exemplos)</li>
                             <li><strong>5:</strong> Excepcional (Demonstrou maestria, superou as expectativas)</li>
                         </ul>
-                        
+                       
                         <p><strong>A. Competências Comportamentais (Peso 40%)</strong></p>
                         <ol>
                             <li><strong>Comunicação:</strong> Clareza, objetividade, escuta ativa, vocabulário. (Nota: __/5)</li>
@@ -683,7 +696,7 @@
                             <li><strong>Ética e Integridade:</strong> Postura, valores. (Nota: __/5)</li>
                             <li><strong>Motivação para Vendas:</strong> Interesse genuíno pela área e por metas. (Nota: __/5)</li>
                         </ol>
-                        
+                       
                         <p><strong>B. Competências Técnicas (Peso 20%)</strong></p>
                         <ol>
                             <li><strong>Experiência em Varejo:</strong> Tempo e relevância da experiência. (Nota: __/5)</li>
@@ -691,29 +704,24 @@
                             <li><strong>Técnicas de Vendas:</strong> Conhece conceitos (ex: Funil, SPIN)? (Nota: __/5)</li>
                             <li><strong>Contorno de Objeções:</strong> Habilidade demonstrada nas perguntas. (Nota: __/5)</li>
                         </ol>
-
                         <h5>Parte 3: Avaliação de Testes e Dinâmicas (Peso 30%)</h5>
                         <ol>
                             <li><strong>Role Play (Seção 7):</strong> Performance na simulação de venda. (Nota: __/5)</li>
                             <li><strong>Coachability:</strong> Capacidade de absorver e aplicar feedback. (Nota: __/5)</li>
                             <li><strong>Testes (Português/Matemática):</strong> Nota ou percentual de acerto. (Nota: __/5)</li>
                         </ol>
-
                         <h5>Parte 4: Alinhamento e Observações (Peso 10%)</h5>
                         <ol>
                             <li><strong>Alinhamento Cultural:</strong> "Fit" com os valores da empresa. (Nota: __/5)</li>
                             <li><strong>Disponibilidade:</strong> Horários, início imediato, etc. (Nota: __/5)</li>
                         </ol>
-
                         <h5>Parte 5: Parecer do Entrevistador</h5>
                         <p><strong>Pontos Fortes Observados:</strong></p>
                         <p>________________________________________________________________</p>
                         <p>________________________________________________________________</p>
-
                         <p><strong>Pontos de Atenção (Red Flags):</strong></p>
                         <p>________________________________________________________________</p>
                         <p>________________________________________________________________</p>
-
                         <p><strong>Cálculo da Pontuação (Exemplo):</strong></p>
                         <ul>
                             <li>Total Comportamental (Max 50): ____ x 0.40 = ____</li>
@@ -722,7 +730,6 @@
                             <li>Total Alinhamento (Max 10): ____ x 0.10 = ____</li>
                             <li><strong>PONTUAÇÃO FINAL (Max 100): ________</strong></li>
                         </ul>
-
                         <p><strong>Parecer Final:</strong></p>
                         <ul class="checklist">
                             <li><i class="fa-regular fa-square"></i> <strong>Aprovado para a próxima etapa (Gestor)</strong></li>
@@ -731,11 +738,18 @@
                             <li><i class="fa-regular fa-square"></i> <strong>Manter em Banco de Talentos</strong></li>
                         </ul>
                     </div>
-
                     <!-- Conteúdo Aba 2: Checklist de Condução (Seção 9) -->
                     <div id="tab-checklist" class="tab-content tab-content-full">
+                        <!-- LINK DO GDOC ADICIONADO -->
+                        <a href="https://docs.google.com/document/d/1KJKjydQ9fEG6IXMjhbly-41R6UikASxOCqz4UMnZmSM/edit?usp=sharing"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="gdoc-button">
+                            <i class="fa-solid fa-print"></i> Abrir Versão para Impressão (GDoc)
+                        </a>
+                        <hr>
+                       
                         <p>Este checklist garante que o entrevistador não esqueça de nenhuma etapa crucial do processo, mantendo a padronização.</p>
-
                         <h4>9.1 Pré-Entrevista</h4>
                         <ul class="checklist">
                             <li><i class="fa-regular fa-square"></i> <strong>3 Dias Antes:</strong> Confirmar agendamento com o candidato (e-mail ou WhatsApp).</li>
@@ -746,7 +760,6 @@
                             <li><i class="fa-regular fa-square"></i> <strong>30 Minutos Antes:</strong> Selecionar o "produto" para o Role Play (Seção 7.1).</li>
                             <li><i class="fa-regular fa-square"></i> <strong>5 Minutos Antes:</strong> Recepcionar o candidato na recepção pontualmente.</li>
                         </ul>
-
                         <h4>9.2 Durante a Entrevista (Roteiro de 60 min)</h4>
                         <ul class="checklist">
                             <li><i class="fa-regular fa-square"></i> <strong>(0-5 min) Abertura:</strong>
@@ -770,13 +783,11 @@
                                 </ul>
                             </li>
                         </ul>
-
                         <h4>9.3 Comportamento do Entrevistador</h4>
                         <ul class="checklist">
                             <li><i class="fa-solid fa-check"></i> <strong>Fazer:</strong> Manter contato visual, sorrir, escuta ativa (ouvir 80%, falar 20%), fazer anotações objetivas (fatos, não julgamentos).</li>
                             <li><i class="fa-solid fa-times"></i> <strong>Não Fazer:</strong> Interromper o candidato, olhar o relógio/celular, fazer perguntas pessoais (religião, política, estado civil, filhos), julgar a aparência.</li>
                         </ul>
-
                         <h4>9.4 Pós-Entrevista (Imediato)</h4>
                         <ul class="checklist">
                             <li><i class="fa-regular fa-square"></i> Preencher a Ficha de Avaliação (Seção 8) *imediatamente*.</li>
@@ -786,82 +797,76 @@
                             <li><i class="fa-regular fa-square"></i> Organizar a sala para o próximo candidato.</li>
                         </ul>
                     </div>
-                    
+                   
                     <!-- Conteúdo Aba 3: Banco de Perguntas (Seção 5) -->
                     <div id="tab-perguntas" class="tab-content tab-content-full">
+                        <!-- LINK DO GDOC ADICIONADO -->
+                        <a href="https://docs.google.com/document/d/1aM6Ueq-AKn5uE2-wsdKArBXpQr2vvBoYrnROnmNSWBU/edit?usp=sharing"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="gdoc-button">
+                            <i class="fa-solid fa-print"></i> Abrir Versão para Impressão (GDoc)
+                        </a>
+                        <hr>
                         <p>Use este banco para conduzir a entrevista estruturada. Selecione as perguntas mais relevantes para o perfil da vaga.</p>
-
                         <h4>5.1 Bloco 1: Apresentação e Motivação (5-10 min)</h4>
                         <p><strong>1. Fale-me um pouco sobre você, focado na sua trajetória profissional.</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Quebrar o gelo (rapport) e avaliar a capacidade de síntese e comunicação inicial.</li>
                             <li><strong>Observar:</strong> Clareza, objetividade, foco na carreira.</li>
                         </ul>
-
                         <p><strong>2. O que te atraiu nesta vaga de vendedor na nossa loja?</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Avaliar a motivação e se o candidato pesquisou a empresa.</li>
                             <li><strong class="green-flag">Respostas Esperadas:</strong> "Gosto do segmento de utilidades", "Pesquisei sobre a empresa e me identifiquei com...", "Busco uma empresa com oportunidade de...".</li>
                             <li><strong class="red-flag">Respostas Alarmantes:</strong> "Qualquer vaga serve", "Estou desesperado", "Não sei muito sobre a loja".</li>
                         </ul>
-
                         <p><strong>3. Por que você quer deixar (ou deixou) seu emprego anterior?</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Entender o que o motiva a mudar (busca crescimento, problemas de relacionamento, etc).</li>
                             <li><strong>Observar:</strong> Postura ética (evitar falar mal do ex-empregador), foco no futuro.</li>
                         </ul>
-
                         <h4>5.2 Bloco 2: Experiências Anteriores (10-15 min)</h4>
                         <p><strong>4. Descreva seu dia a dia de trabalho no seu último emprego como vendedor. Quais eram suas principais responsabilidades?</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Entender o nível de autonomia, responsabilidade e as tarefas que ele já domina (caixa, estoque, metas).</li>
                         </ul>
-
                         <p><strong>5. Qual era o seu processo de abordagem ao cliente na loja anterior? Era focado em quê?</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Avaliar se o perfil é "consultivo" (foca na necessidade) ou "agressivo" (foca no produto).</li>
                         </ul>
-
                         <p><strong>6. Você trabalhava com metas? Quais eram e como você acompanhava seu desempenho?</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Avaliar a familiaridade com metas, resiliência e foco em resultados.</li>
                             <li><strong>Aprofundar:</strong> "Me conte sobre um mês que você não bateu a meta. O que você fez?" (Avalia resiliência).</li>
                         </ul>
-
                         <h4>5.3 Bloco 3: Competências Comportamentais (Técnica STAR) (15-20 min)</h4>
                         <p><em>Instrução: Sempre peça exemplos reais usando a técnica STAR (Situação, Tarefa, Ação, Resultado).</em></p>
-
                         <p><strong>7. (Resiliência) Me conte sobre uma situação em que você recebeu um "não" de um cliente que parecia certo da compra. O que você fez?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Frustração, capacidade de manter a postura, tentativa de reverter ou aprender.</li>
                         </ul>
-
                         <p><strong>8. (Empatia/Conflito) Descreva a situação mais difícil que você já teve com um cliente (irritado, reclamando). Qual foi sua Ação e o Resultado?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Escuta ativa, paciência, foco na solução (não no problema), inteligência emocional.</li>
                         </ul>
-
                         <p><strong>9. (Proatividade) O que você costumava fazer em dias de baixo movimento na loja?</strong></p>
                         <ul>
                             <li><strong class="green-flag">Respostas Esperadas:</strong> "Organizava a seção", "Limpava gôndolas", "Estudava produtos novos", "Verificava o estoque".</li>
                             <li><strong class="red-flag">Respostas Alarmantes:</strong> "Ficava no celular", "Esperava o cliente aparecer".</li>
                         </ul>
-
                         <p><strong>10. (Trabalho em Equipe) Lembre-se de uma situação em que você teve um conflito com um colega de equipe (ex: sobre comissão, organização). Como foi resolvido?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Foco na colaboração, comunicação, maturidade.</li>
                         </ul>
-
                         <p><strong>11. (Organização) Como você se organiza para gerenciar múltiplos clientes ao mesmo tempo em um dia movimentado?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Priorização, gestão de tempo, calma sob pressão.</li>
                         </ul>
-
                         <p><strong>12. (Persuasão) Qual foi a venda mais difícil ou complexa que você realizou? Por que foi difícil e o que você fez para fechar?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Técnicas de negociação, paciência, habilidade de argumentação.</li>
                         </ul>
-
                         <h4>5.4 Bloco 4: Conhecimentos Técnicos e Role Play (10-15 min)</h4>
                         <p><strong>13. (Técnica) Se um cliente entra procurando um jogo de panelas, quais as 3 principais perguntas que você faria a ele antes de mostrar qualquer produto?</strong></p>
                         <ul>
@@ -869,17 +874,14 @@
                             <li><strong class="green-flag">Respostas Esperadas:</strong> "Para quantas pessoas?", "Usa muito fogão de indução?", "Busca mais durabilidade (inox) ou praticidade (antiaderente)?".</li>
                             <li><strong class="red-flag">Respostas Alarmantes:</strong> "Qual o preço que quer pagar?" (foca só em preço).</li>
                         </ul>
-
                         <p><strong>14. (Objeção) O que você faz quando o cliente diz: "Gostei, mas está muito caro"?</strong></p>
                         <ul>
                             <li><strong>Observar:</strong> Capacidade de agregar valor, justificar o preço (qualidade, durabilidade) antes de oferecer desconto.</li>
                         </ul>
-
                         <p><strong>15. (Simulação/Role Play) Vamos simular: Eu sou um cliente e este [item da loja] é o produto. Venda-o para mim.</strong></p>
                         <ul>
                             <li><strong>Objetivo:</strong> Ver na prática. (Usar Roteiro da Seção 7).</li>
                         </ul>
-
                         <h4>5.5 Bloco 5: Fechamento (5 min)</h4>
                         <p><strong>16. Você tem alguma pergunta para mim sobre a vaga, a equipe ou a empresa?</strong></p>
                         <ul>
@@ -888,14 +890,21 @@
                             <li><strong class="red-flag">Perguntas Alarmantes:</strong> "Folga quando?", "Pode sair mais cedo?", "Não, nenhuma dúvida." (demonstra desinteresse).</li>
                         </ul>
                     </div>
-                    
+                   
                     <!-- Conteúdo Aba 4: Roteiro de Role Play (Seção 7) -->
                     <div id="tab-roleplay" class="tab-content tab-content-full">
+                        <!-- LINK DO GDOC ADICIONADO -->
+                        <a href="https://docs.google.com/document/d/1CsD2sPqHZ196DAd98G5wSpXs1PsE5EuGrMxC52Uqb3U/edit?usp=sharing"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="gdoc-button">
+                            <i class="fa-solid fa-print"></i> Abrir Versão para Impressão (GDoc)
+                        </a>
+                        <hr>
+                       
                         <p>Dinâmicas de grupo são úteis para alto volume de vagas. Para vagas de vendedor, o Role Play individual é mais rápido e eficaz para avaliar as competências essenciais.</p>
-
                         <h4>7.1 Role Play: Simulação de Venda (10-15 min)</h4>
                         <p><strong>Objetivo:</strong> Avaliar na prática as habilidades de abordagem, sondagem, argumentação, contorno de objeções e fechamento, além do "Coachability".</p>
-
                         <h5>Instruções para o Avaliador (RH/Gestor):</h5>
                         <ol>
                             <li><strong>Preparação (2 min):</strong>
@@ -926,13 +935,11 @@
                                 </ul>
                             </li>
                         </ol>
-
                         <h5>Cenário 2: Cliente com Reclamação (Avançado)</h5>
                         <ul>
                             <li><strong>Avaliador (Cliente):</strong> "Comprei esta [produto] semana passada e ela já quebrou! Isso aqui não presta!"</li>
                             <li><strong>Observar:</strong> Postura defensiva (ruim) vs. Postura empática (boa), escuta ativa, foco na solução (troca, análise).</li>
                         </ul>
-
                         <h4>7.2 Ficha de Avaliação Específica do Role Play</h4>
                         <p>Use esta pontuação para preencher a "Parte 3" da Ficha de Avaliação (Seção 8).</p>
                         <ol>
@@ -945,7 +952,6 @@
                         </ol>
                         <p><strong>Total Role Play (Máx 30): ________</strong></p>
                     </div>
-
                     <!-- Conteúdo Aba 5: Guia de Integração (Resumo do Usuário) -->
                     <div id="tab-integracao" class="tab-content tab-content-full">
                         <h4>📊 5. DOCUMENTO DE INTEGRAÇÃO E RESUMO</h4>
@@ -961,10 +967,162 @@
                             <li>Métricas de sucesso</li>
                         </ul>
                     </div>
-
+                   
+                    <!-- NOVA ABA ADICIONADA: Análise Comportamental -->
+                    <div id="tab-comportamental" class="tab-content tab-content-full">
+                        <h3><i class="fa-solid fa-brain"></i> Roteiro de Análise Comportamental</h3>
+                        <p>Esta é a etapa mais crucial. 9 em cada 10 demissões ocorrem por comportamento, não por falha técnica. Este guia ajuda a identificar o perfil *real* do candidato.</p>
+                       
+                        <h4>1. A Técnica STAR (Analisando o que ele fez)</h4>
+                        <p>Para avaliar competências, use a <strong>Técnica STAR</strong>. Não aceite respostas teóricas (ex: "Eu sou proativo"). Exija exemplos concretos (ex: "Conte-me uma situação em que você fez além do que era esperado").</p>
+                        <p><strong>Como fazer:</strong> Para cada pergunta comportamental (veja a aba "Perguntas"), organize a resposta do candidato mentalmente:</p>
+                        <ul>
+                            <li><strong>(S) Situação:</strong> Qual era o contexto?</li>
+                            <li><strong>(T) Tarefa:</strong> Qual era o seu objetivo?</li>
+                            <li><strong>(A) Ação:</strong> O que <strong>você</strong> fez concretamente? (Cuidado com "nós fizemos")</li>
+                            <li><strong>(R) Resultado:</strong> Qual foi o desfecho? O que você aprendeu?</li>
+                        </ul>
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Competência Avaliada</th>
+                                        <th>Exemplo de Pergunta (use a aba "Perguntas")</th>
+                                        <th>O que você deve avaliar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Resiliência / Pressão</strong></td>
+                                        <td>"Fale sobre um momento em que você teve que trabalhar sob pressão..."</td>
+                                        <td>Capacidade de manter a calma e tomar medidas eficazes sob estresse.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Inteligência Emocional</strong></td>
+                                        <td>"Descreva um conflito que você enfrentou no trabalho e como o resolveu."</td>
+                                        <td>Habilidade de lidar com desentendimentos (escuta ativa, paciência, busca por consenso).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Aprendizado com Erros</strong></td>
+                                        <td>"Conte-me sobre um erro que você cometeu e o que aprendeu com ele."</td>
+                                        <td>Capacidade de autocrítica e foco em ações corretivas (não em culpar os outros).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Proatividade / Iniciativa</strong></td>
+                                        <td>"O que você costumava fazer em dias de baixo movimento na loja?"</td>
+                                        <td>Avaliar se o candidato busca soluções (estudar produtos, organizar seção) ou espera ordens.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4>2. Análise da Linguagem Corporal (Como ele se expressa)</h4>
+                        <p>Observe se a comunicação não verbal (corpo) está em <strong>consonância</strong> com a fala (voz). A opinião é formada nos primeiros minutos. Não avalie gestos isolados, mas o conjunto.</p>
+                       
+                        <h5>Aspectos Positivos (Confiança e Interesse):</h5>
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr><th>Postura / Gesto</th><th>Mensagem Transmitida (Positiva)</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><strong>Postura Ereta</strong></td><td>Autoconfiança, seriedade. Pés no chão.</td></tr>
+                                    <tr><td><strong>Contato Visual</strong></td><td>Atenção, foco, respeito.</td></tr>
+                                    <tr><td><strong>Gestos Coerentes</strong></td><td>Sinceridade, gesticulação natural e relaxada.</td></tr>
+                                    <tr><td><strong>Tronco Voltado ao Recrutador</strong></td><td>Envolvimento, atenção, confiança.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                       
+                        <h5>Sinais de Alerta (Nervosismo, Desinteresse ou Incoerência):</h5>
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr><th>Postura / Gesto</th><th>Mensagem Transmitida (Negativa)</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><strong>Falta de Postura</strong></td><td>Indiferença, desleixo ("esparramar-se na cadeira").</td></tr>
+                                    <tr><td><strong>Movimentos de Nervosismo</strong></td><td>Bater dedos, chacoalhar pés, tocar o pescoço/cabeça.</td></tr>
+                                    <tr><td><strong>Desvio do Olhar</strong></td><td>Desconforto ou falta de foco.</td></tr>
+                                    <tr><td><strong>Mudança Frequente de Posição</strong></td><td>Pode revelar incoerência com o conteúdo verbal.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4>3. Análise do Temperamento (Quem ele é)</h4>
+                        <p>O objetivo é verificar a compatibilidade (Fit Cultural) entre o perfil <strong>inato</strong> do candidato e as exigências da função de vendas na Plur.</p>
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Temperamento</th>
+                                        <th>Foco</th>
+                                        <th>Características Chave Positivas</th>
+                                        <th>Desafios / Pontos a Corrigir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Colérico</strong></td>
+                                        <td>Ação / Fogo</td>
+                                        <td>Determinado, ambicioso, líder nato, persistente.</td>
+                                        <td>Impaciência, autoritarismo, intolerância a falhas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Melancólico</strong></td>
+                                        <td>Reflexão / Terra</td>
+                                        <td>Analítico, profundo, detalhista, organizado, ético.</td>
+                                        <td>Tendência ao pessimismo, excessivamente crítico.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sanguíneo</strong></td>
+                                        <td>Comunicação / Ar</td>
+                                        <td>Extrovertido, otimista, sociável, comunicativo, carismático.</td>
+                                        <td>Indisciplinado, inconstante, superficialidade.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fleumático</strong></td>
+                                        <td>Estabilidade / Água</td>
+                                        <td>Calmo, paciente, confiável, diplomático, bom ouvinte.</td>
+                                        <td>Preguiça, inércia, dificuldade com mudanças, indecisão.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4>4. Checklist de Alinhamento (Vendedor Plur)</h4>
+                        <p>Durante a entrevista, compare o que você observou com o perfil ideal para a vaga:</p>
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Necessidade da Vaga</th>
+                                        <th>Alinhamento de Perfil/Temperamento Ideal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Empatia/Relacionamento</strong></td>
+                                        <td>Traços fortes de <strong>Sanguíneo</strong> (comunicativo) ou <strong>Fleumático</strong> (bom ouvinte).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Resiliência (Lidar com "Não")</strong></td>
+                                        <td>Traços de <strong>Fleumático</strong> (calmo sob pressão) ou <strong>Sanguíneo</strong> (otimista, "perdoa e esquece").</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Proatividade (Abordar cliente)</strong></td>
+                                        <td>Traços fortes de <strong>Colérico</strong> (foco na ação) ou <strong>Sanguíneo</strong> (extrovertido).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Organização (Gerir tarefas)</strong></td>
+                                        <td>Traços de <strong>Melancólico</strong> (detalhista) ou <strong>Fleumático</strong> (rotina).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <p><strong>Resumo da Análise:</strong> O currículo e as habilidades técnicas (Hard Skills) são os <strong>tijolos</strong>. O perfil comportamental e o temperamento (Soft Skills) são a <strong>planta e o tipo de solo</strong>. Não adianta ter os melhores tijolos se o solo (temperamento) for instável para a função.</p>
+                    </div>
                 </div>
             </section>
-            
+           
             <!-- Seção Fluxo (FORMATADA CORRETAMENTE) -->
             <section id="fluxo" class="fade-in">
                 <h3>Como Usar Tudo Junto (Fluxo Completo)</h3>
@@ -1014,21 +1172,18 @@
                     <p><strong>Você tem em mãos um sistema profissional de seleção de vendedores que pode começar a usar AGORA.</strong></p>
                 </div>
             </section>
-
         </div>
     </main>
-
     <!-- Rodapé (Padrão V3 - Proposta) -->
     <footer>
-        <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-34.png" 
-             alt="Live Consultoria" 
-             class="footer-logo" 
+        <img src="https://raw.githubusercontent.com/Clebito2/layout/main/Logo%20live%20oficial-34.png"
+             alt="Live Consultoria"
+             class="footer-logo"
              loading="lazy"
              onerror="this.onerror=null; this.src='https://placehold.co/96x96/000000/a0a0a0?text=Live+Logo'">
         <p>Live Consultoria Empresarial</p>
         <p>Transformando Potencial em Performance.</p>
     </footer>
-
     <!-- Script de Animação (Padrão V3) -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1044,43 +1199,38 @@
                 }, {
                     threshold: 0.1 // Ativa quando 10% do elemento está visível
                 });
-
                 const targets = document.querySelectorAll('.fade-in');
                 targets.forEach(target => {
                     observer.observe(target);
                 });
             }
         });
-        
+       
         // --- Script das Abas (Tabs) ---
         function openTab(evt, tabName) {
             // Declarar variáveis
             var i, tabcontent, tablinks;
-
             // Pegar todos os elementos com class="tab-content" e escondê-los
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
                 tabcontent[i].classList.remove("active");
             }
-
             // Pegar todos os elementos com class="tab-button" e remover a classe "active"
             tablinks = document.getElementsByClassName("tab-button");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active");
             }
-
             // Mostrar a aba atual e adicionar a classe "active" ao botão que abriu a aba
             document.getElementById(tabName).style.display = "block";
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
-        
+       
         // Abrir a primeira aba por padrão
         document.addEventListener('DOMContentLoaded', function() {
              document.querySelector('.tab-button').click();
         });
     </script>
-
 </body>
 </html>
